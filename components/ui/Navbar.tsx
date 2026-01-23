@@ -2,14 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import { ModeToggle } from "../dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetDescription,
-  SheetTitle,
-} from "@/components/ui/sheet";
 
 const navItems = ["Home", "About", "Blog"];
 
@@ -20,94 +14,65 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 w-full bg-background/70 backdrop-blur-lg border-b z-50"
+      transition={{ duration: 0.6 }}
+      className="fixed top-0 left-0 w-full bg-background/70 backdrop-blur border-b z-50"
     >
-      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+        
         {/* Logo */}
-        <motion.div whileHover={{ scale: 1.05 }}>
-          <Link
-            href="/"
-            className="text-2xl font-bold tracking-tight cursor-pointer"
-          >
-            Harsh<span className="text-primary">.</span>
-          </Link>
-        </motion.div>
+        <Link href="/" className="text-2xl font-bold">
+          Harsh<span className="text-primary">.</span>
+        </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex gap-8 items-center">
           {navItems.map((item) => (
-            <motion.div key={item} whileHover="hover" className="relative">
-              <Link
-                href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className="font-medium cursor-pointer"
-              >
-                {item}
-              </Link>
-
-              {/* Underline animation */}
-              <motion.span
-                variants={{
-                  hover: { width: "100%" },
-                  initial: { width: 0 },
-                }}
-                initial="initial"
-                transition={{ duration: 0.3 }}
-                className="absolute left-0 -bottom-1 h-[2px] bg-primary"
-              />
-            </motion.div>
+            <Link
+              key={item}
+              href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+              className="font-medium hover:text-primary"
+            >
+              {item}
+            </Link>
           ))}
-        </div>
-
-        {/* Desktop Buttons */}
-        <div className="hidden md:flex items-center gap-4">
           <ModeToggle />
         </div>
 
-        {/* Mobile Drawer */}
-        <Sheet open={open} onOpenChange={setOpen}>
-          <SheetContent side="right" className="w-72">
-            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-
-            <SheetHeader>
-              <SheetDescription className="text-xl font-bold mt-4">
-                Harsh Blogs
-              </SheetDescription>
-            </SheetHeader>
-
-            <motion.div
-              initial="hidden"
-              animate="show"
-              variants={{
-                hidden: { opacity: 0 },
-                show: {
-                  opacity: 1,
-                  transition: { staggerChildren: 0.1 },
-                },
-              }}
-              className="flex flex-col gap-5 text-lg font-medium mt-6"
-            >
-              {navItems.map((item) => (
-                <motion.div
-                  key={item}
-                  variants={{
-                    hidden: { x: 40, opacity: 0 },
-                    show: { x: 0, opacity: 1 },
-                  }}
-                >
-                  <Link
-                    href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                    onClick={() => setOpen(false)}
-                    className="block p-2 rounded-xl hover:bg-accent transition"
-                  >
-                    {item}
-                  </Link>
-                </motion.div>
-              ))}
-            </motion.div>
-          </SheetContent>
-        </Sheet>
+        {/* Mobile Button */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden relative right-60"
+        >
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+    {open && (
+  <div className="md:hidden z-40">
+    <motion.div
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "100%" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="fixed right-0 top-0 h-full w-64 bg-background p-6"
+    >
+      <nav className="mt-12 flex  gap-6 text-lg font-medium justify-center">
+        {navItems.map((item) => (
+          <Link
+            key={item}
+            href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+            onClick={() => setOpen(false)}
+            className="hover:text-primary transition"
+          >
+            {item}
+          </Link>
+        ))}
+      </nav>
+    </motion.div>
+  </div>
+)}
+
     </motion.nav>
   );
 }

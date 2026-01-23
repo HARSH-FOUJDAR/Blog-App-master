@@ -131,7 +131,7 @@ const certifications = [
 export default function Page() {
   return (
     <>
-      <main className="bg-gradient-to-b from-background to-background/40 mt-50 ">
+      <main className="bg-gradient-to-b from-background to-background/40 mt-50 overflow-x-hidden ">
         <section className="container px-4 py-20  mx-auto lg:h-[650px] lg:flex lg:items-center lg:gap-16 overflow-hidden ">
           {/* TEXT SECTION */}
           <motion.div

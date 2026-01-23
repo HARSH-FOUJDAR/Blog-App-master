@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white mt-20 to-gray-50 dark:from-black dark:to-gray-900 text-gray-800 dark:text-gray-200">
+    <main className="min-h-screen bg-gradient-to-b from-white mt-20 to-gray-50 dark:from-black dark:to-gray-900 text-gray-800 dark:text-gray-200 overflow-x-hidden">
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 text-center">
         {/* 🔹 Heading */}

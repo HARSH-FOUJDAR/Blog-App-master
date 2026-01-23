@@ -138,3 +138,6 @@
   @apply max-w-[60px] max-h-[60px] object-contain;
 }
 
+body{
+  overflow-x:hidden ;
+}
