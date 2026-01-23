@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaMedal } from "react-icons/fa6";
 import { FaLaptopCode } from "react-icons/fa6";
 import { GiAutoRepair } from "react-icons/gi";
+import { Footer } from "@/components/ui/Footer";
 import {
   Carousel,
   CarouselContent,
@@ -150,13 +151,12 @@ export default function Page() {
 
             {/* Subtitle */}
             <p className="mt-8 text-lg md:text-xl font-bold text-gray-600 dark:text-gray-300 leading-relaxed">
-              Hi, I'm Harsh Foujdar. A passionate Full Stack Developer based In
-              Rajashtan, India.
+              Hi, I'm Harsh Foujdar. A passionate Full Stack Developer 
             </p>
             <p className="mt-5  md:text-xl text-gray-600">
               {" "}
-              High knowledge on <br />
-              <span>softwares</span>
+              High knowledge on  
+              <span> softwares</span>
             </p>
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4 mt-3 justify-center lg:justify-start">
@@ -514,6 +514,7 @@ export default function Page() {
             </div>
           </div>
         </section>
+        <Footer></Footer>
       </main>
       <div></div>
     </>

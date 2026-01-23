@@ -11,7 +11,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 
-const navItems = ["Home", "About", "Skills", "Contact"];
+const navItems = ["Home", "About", "Blog"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,7 +24,6 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full bg-background/70 backdrop-blur-lg border-b z-50"
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
-
         {/* Logo */}
         <motion.div whileHover={{ scale: 1.05 }}>
           <Link
@@ -38,11 +37,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <motion.div
-              key={item}
-              whileHover="hover"
-              className="relative"
-            >
+            <motion.div key={item} whileHover="hover" className="relative">
               <Link
                 href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 className="font-medium cursor-pointer"

@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaLock } from "react-icons/fa6";
 import { TbArrowMoveRightFilled } from "react-icons/tb";
 
 const images = [
@@ -283,6 +282,9 @@ export default function Blog() {
             </motion.div>
           </div>
         </section>
+        <footer className="py-10 text-center opacity-60 text-sm">
+          © 2026 Your Software Company. All rights reserved.
+        </footer>
       </main>
     </>
   );

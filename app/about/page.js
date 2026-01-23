@@ -3,7 +3,6 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white mt-20 to-gray-50 dark:from-black dark:to-gray-900 text-gray-800 dark:text-gray-200">
@@ -69,12 +68,8 @@ export default function AboutPage() {
           Download CV
         </motion.a>
       </section>
-
-      {/* What We Do */}
-
-      {/* Footer */}
       <footer className="py-10 text-center opacity-60 text-sm">
-        © 2025 Your Software Company. All rights reserved.
+        © 2026 Your Software Company. All rights reserved.
       </footer>
     </main>
   );
