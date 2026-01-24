@@ -209,12 +209,7 @@ export default function Page() {
                 />
               </a>
 
-              <a className="icon-box">
-                <img
-                  src="https://img.icons8.com/?size=80&id=GPfHz0SM85FX&format=png"
-                  alt="Java"
-                />
-              </a>
+         
               <a className="icon-box">
                 <img
                   src="https://www.guvi.in/assets/D8ppmyio-postman.webp"
@@ -227,12 +222,7 @@ export default function Page() {
                   alt="Aws"
                 />
               </a>
-              <a className="icon-box">
-                <img
-                  src="https://www.guvi.in/assets/pWlFwCYi-vscode.webp"
-                  alt="Vs Code"
-                />
-              </a>
+    
               <a className="icon-box">
                 <img
                   src="https://www.guvi.in/assets/DgRo5tQb-mongoose.webp"
