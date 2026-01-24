@@ -69,7 +69,7 @@ export default function AboutPage() {
         </motion.a>
       </section>
       <footer className="py-10 text-center opacity-60 text-sm">
-        © 2026 Your Software Company. All rights reserved.
+        © 2026 portfolio By Harsh Foujdar
       </footer>
     </main>
   );
