@@ -131,7 +131,7 @@ const certifications = [
 export default function Page() {
   return (
     <>
-      <main className="bg-gradient-to-b from-background to-background/40 mt-50 overflow-x-hidden ">
+      <main className="bg-gradient-to-b from-background to-background/40 mt-30 ">
         <section className="container px-4 py-20  mx-auto lg:h-[650px] lg:flex lg:items-center lg:gap-16 overflow-hidden ">
           {/* TEXT SECTION */}
           <motion.div
@@ -151,11 +151,11 @@ export default function Page() {
 
             {/* Subtitle */}
             <p className="mt-8 text-lg md:text-xl font-bold text-gray-600 dark:text-gray-300 leading-relaxed">
-              Hi, I'm Harsh Foujdar. A passionate Full Stack Developer 
+              Hi, I'm Harsh Foujdar. A passionate Full Stack Developer
             </p>
             <p className="mt-5  md:text-xl text-gray-600">
               {" "}
-              High knowledge on  
+              High knowledge on
               <span> softwares</span>
             </p>
             {/* CTA Buttons */}
@@ -209,7 +209,12 @@ export default function Page() {
                 />
               </a>
 
-         
+              <a className="icon-box">
+                <img
+                  src="https://img.icons8.com/?size=80&id=GPfHz0SM85FX&format=png"
+                  alt="Java"
+                />
+              </a>
               <a className="icon-box">
                 <img
                   src="https://www.guvi.in/assets/D8ppmyio-postman.webp"
@@ -222,7 +227,12 @@ export default function Page() {
                   alt="Aws"
                 />
               </a>
-    
+              <a className="icon-box">
+                <img
+                  src="https://www.guvi.in/assets/pWlFwCYi-vscode.webp"
+                  alt="Vs Code"
+                />
+              </a>
               <a className="icon-box">
                 <img
                   src="https://www.guvi.in/assets/DgRo5tQb-mongoose.webp"

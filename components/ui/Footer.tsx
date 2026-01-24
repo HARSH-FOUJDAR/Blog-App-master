@@ -85,16 +85,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="bg-[#d1701f]">
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-          <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-            © 2020 Tailblocks — <span className="itelic">Subscribe Now</span>
-            <a className="ml-3 text-blue-500 cursor-pointer">
-              <img
-                src="https://cdn.iconscout.com/icon/free/png-512/free-youtube-logo-icon-svg-download-png-721990.png?f=webp&w=512"
-                className="w-8 h-8"
-              />
-            </a>
-          </p>
-
+    
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-blue-500 cursor-pointer">
               <svg fill="currentColor" className="w-8 h-8" viewBox="0 0 24 24">
