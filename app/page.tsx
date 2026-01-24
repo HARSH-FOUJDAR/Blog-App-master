@@ -6,6 +6,7 @@ import { FaMedal } from "react-icons/fa6";
 import { FaLaptopCode } from "react-icons/fa6";
 import { GiAutoRepair } from "react-icons/gi";
 import { Footer } from "@/components/ui/Footer";
+
 import {
   Carousel,
   CarouselContent,
@@ -131,154 +132,93 @@ const certifications = [
 export default function Page() {
   return (
     <>
-      <main className="bg-gradient-to-b from-background to-background/40 mt-30 ">
-        <section className="container px-4 py-20  mx-auto lg:h-[650px] lg:flex lg:items-center lg:gap-16 overflow-hidden ">
+      <main className="bg-gradient-to-b from-background via-background/80 to-background/60 mt-32">
+        <section className="max-w-6xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center gap-16">
           {/* TEXT SECTION */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="w-full text-center lg:text-left lg:w-1/2"
+            transition={{ duration: 0.7 }}
+            className="w-full lg:w-1/2 text-center lg:text-left"
           >
-            <h1 className="text-xl md:text-6xl font-extrabold tracking-tight leading-tight bg-transparent  font-itelic text-gray-900 dark:text-white">
-              Harsh Foujdar
-              <br />
-              with
-              <span className="bg-gradient-to-r from-primary to-purple-500 relative left-2 bg-clip-text text-transparent bg-background/70 ">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
+              Harsh Foujdar <br />
+              <span className="bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent">
                 Full Stack Developer
               </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="mt-8 text-lg md:text-xl font-bold text-gray-600 dark:text-gray-300 leading-relaxed">
-              Hi, I'm Harsh Foujdar. A passionate Full Stack Developer
+            <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300">
+              Hi, I'm Harsh Foujdar — a passionate Full Stack Developer
             </p>
-            <p className="mt-5  md:text-xl text-gray-600">
-              {" "}
-              High knowledge on
-              <span> softwares</span>
+
+            <p className="mt-3 text-gray-500">
+              Strong knowledge of modern software technologies
             </p>
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 mt-3 justify-center lg:justify-start">
-              <a className="icon-box">
-                <img
-                  src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png"
-                  alt="HTML"
-                />
-              </a>
 
-              <a className="icon-box">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-                  alt="CSS"
-                />
-              </a>
-
-              <a className="icon-box">
-                <img
-                  src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
-                  alt="JavaScript"
-                />
-              </a>
-
-              <a className="icon-box">
-                <img
-                  src="https://logo.svgcdn.com/logos/react.png"
-                  alt="React"
-                />
-              </a>
-
-              <a className="icon-box">
-                <img
-                  src="https://nodejs.org/static/logos/nodejsHex.svg"
-                  alt="Node.js"
-                />
-              </a>
-
-              <a className="icon-box bg-white">
-                <img
-                  src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png"
-                  alt="Express"
-                />
-              </a>
-
-              <a className="icon-box">
-                <img
-                  src="https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png"
-                  alt="MongoDB"
-                />
-              </a>
-
-              <a className="icon-box">
-                <img
-                  src="https://img.icons8.com/?size=80&id=GPfHz0SM85FX&format=png"
-                  alt="Java"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  src="https://www.guvi.in/assets/D8ppmyio-postman.webp"
-                  alt="Postmen"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  src="https://www.guvi.in/assets/D5awHPXx-aws.webp"
-                  alt="Aws"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  src="https://www.guvi.in/assets/pWlFwCYi-vscode.webp"
-                  alt="Vs Code"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  src="https://www.guvi.in/assets/DgRo5tQb-mongoose.webp"
-                  alt="mongoose"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
-                  alt="GitHub"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  src="https://www.guvi.in/assets/BJvKArqQ-git.webp"
-                  alt="mongoose"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  className=""
-                  src="https://www.guvi.in/assets/BnPPt1jF-cursorai.webp"
-                  alt="mongoose"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  className=""
-                  src="https://www.guvi.in/assets/k9QyaKm9-mysql.webp"
-                  alt="mysql"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  className=""
-                  src="https://www.guvi.in/assets/DDI8tCRX-tailwindcss.webp"
-                  alt="Tailwind css"
-                />
-              </a>
-              <a className="icon-box">
-                <img
-                  className=""
-                  src="https://www.guvi.in/assets/Dmmzib7r-redux.webp"
-                  alt="Redux"
-                />
-              </a>
+            {/* TECH STACK */}
+            <div className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
+              {[
+                {
+                  name: "HTML",
+                  src: "https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png",
+                },
+                {
+                  name: "CSS",
+                  src: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+                },
+                {
+                  name: "JavaScript",
+                  src: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+                },
+                {
+                  name: "React",
+                  src: "https://logo.svgcdn.com/logos/react.png",
+                },
+                {
+                  name: "Node",
+                  src: "https://nodejs.org/static/logos/nodejsHex.svg",
+                },
+                {
+                  name: "Next.js",
+                  src: "https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png",
+                },
+                {
+                  name: "MongoDB",
+                  src: "https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png",
+                },
+                {
+                  name: "Java",
+                  src: "https://img.icons8.com/?size=80&id=GPfHz0SM85FX&format=png",
+                },
+                {
+                  name: "AWS",
+                  src: "https://www.guvi.in/assets/D5awHPXx-aws.webp",
+                },
+                {
+                  name: "GitHub",
+                  src: "https://img.icons8.com/?size=100&id=12599&format=png&color=000000",
+                },
+                {
+                  name: "Tailwind",
+                  src: "https://www.guvi.in/assets/DDI8tCRX-tailwindcss.webp",
+                },
+                {
+                  name: "Redux",
+                  src: "https://www.guvi.in/assets/Dmmzib7r-redux.webp",
+                },
+              ].map((tech) => (
+                <div
+                  key={tech.name}
+                  className="w-[70px] h-[70px] flex items-center justify-center rounded-xl border border-gray-300 dark:border-gray-600 hover:scale-110 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                >
+                  <img
+                    src={tech.src}
+                    alt={tech.name}
+                    className="max-w-[45px] max-h-[45px] object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -286,18 +226,19 @@ export default function Page() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.9 }}
-            className="w-full mt-12 lg:mt-0 lg:w-1/2 flex justify-center"
+            transition={{ duration: 0.7 }}
+            className="w-full lg:w-1/2 flex justify-center"
           >
             <Image
               src="/images/Untitled design (1).png"
-              alt="tailwind components"
-              width={400}
-              height={400}
-              className="max-w-xl   hover:scale-[1.05] rounded-full transition-transform duration-500"
+              alt="Harsh Foujdar"
+              width={380}
+              height={380}
+              className="rounded-full hover:scale-105 transition-transform duration-500"
             />
           </motion.div>
         </section>
+
         <hr className="my-12 border-gray-300 dark:border-gray-700" />
         {/* Project SECTION */}
         <section className="py-24 bg-gradient-to-b from-background/40 to-background/10">
