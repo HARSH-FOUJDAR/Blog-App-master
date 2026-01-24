@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/ui/theme-provider";
 import "./globals.css";
 import NavbarWrapper from "./NavbarWrapper";
 
@@ -32,17 +31,13 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+      
+  
           <NavbarWrapper />
 
 
           {children}
-        </ThemeProvider>
+
       </body>
     </html>
   );

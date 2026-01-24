@@ -61,7 +61,7 @@ const images = [
   },
   {
     img: "https://funny-gecko-f7f265.netlify.app/assets/Screenshot%202026-01-23%20103718-B-9dEY_n.png",
-    title: "Admin Dashboard UI",
+    title: "E comerse Website",
     desc: "A modern and responsive admin dashboard interface with reusable components, clean layouts, and mobile-friendly design, focused on usability and scalability.",
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
     skills: ["Dashboard Design", "Component Reusability", "Responsive UI"],
