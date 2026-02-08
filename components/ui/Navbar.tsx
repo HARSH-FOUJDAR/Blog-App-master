@@ -1,92 +1,129 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-const navItems = ["Home", "About", "Blog"];
+const NAV_ITEMS = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#Skills" },
+  { name: "Projects", href: "#Projects" },
+  { name: "Certifications", href: "#certifications" },
+  { name: "Contact", href: "#contact" },
+];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
-  // ✅ BODY SCROLL CONTROL (PROPER WAY)
+  const toggleMenu = useCallback(() => setIsOpen((prev) => !prev), []);
+  const closeMenu = useCallback(() => setIsOpen(false), []);
+
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "auto";
-
-    // cleanup (important)
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "unset";
     };
-  }, [open]);
+  }, [isOpen]);
 
   return (
-    <motion.nav
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur border-b"
-    >
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
+    <header className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
+      <nav
+        className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+        aria-label="Main Navigation"
+      >
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold">
+        <Link
+          href="/"
+          className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
+        >
           Harsh<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden xl:flex gap-8 items-center">
-          {navItems.map((item) => (
+        <div className="hidden lg:flex items-center gap-1">
+          {NAV_ITEMS.map((item) => (
             <Link
-              key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className="font-medium hover:text-primary transition"
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "px-4 py-2 text-sm font-medium rounded-md transition-colors",
+                pathname === item.href
+                  ? "text-primary bg-primary/10"
+                  : "text-muted-foreground hover:text-primary hover:bg-accent",
+              )}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Toggle Button */}
         <button
-          aria-label="Toggle Menu xl:hidden"
-          aria-expanded={open}
-          onClick={() => setOpen(!open)}
-          className="xl:hidden"
+          type="button"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          onClick={toggleMenu}
+          className="lg:hidden p-5 text-foreground hover:bg-accent rounded-md transition-colors"
         >
-          {open ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? (
+            <X size={30} className="relative right-20" />
+          ) : (
+            <Menu size={35} className="relative right-20" />
+          )}
         </button>
-      </div>
+      </nav>
 
-      {/* Overlay */}
-      {open && (
-        <div
-          onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/40 z-40 xl:hidden"
-        />
-      )}
+      {/* Mobile Menu & Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={closeMenu}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[45] lg:hidden"
+            />
 
-      {/* Mobile Menu */}
-      <motion.div
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.25 }}
-        className={`xl:hidden fixed top-[72px] left-0 w-full bg-background z-50 shadow-lg ${
-          open ? "block" : "hidden"
-        }`}
-      >
-        <nav className="flex flex-col items-center gap-6 py-8 text-lg font-medium">
-          {navItems.map((item) => (
-            <Link
-              key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              onClick={() => setOpen(false)}
-              className="hover:text-primary transition"
+            {/* Slide-down Menu */}
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="lg:hidden absolute top-full left-0 w-full bg-background border-b z-50 overflow-hidden"
             >
-              {item}
-            </Link>
-          ))}
-        </nav>
-      </motion.div>
-    </motion.nav>
+              <div className="flex flex-col p-6 space-y-4">
+                {NAV_ITEMS.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={closeMenu}
+                    className={cn(
+                      "text-lg font-semibold transition-colors",
+                      pathname === item.href
+                        ? "text-primary"
+                        : "text-muted-foreground",
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </header>
   );
 }
