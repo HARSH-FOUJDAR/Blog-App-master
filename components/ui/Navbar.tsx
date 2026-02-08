@@ -43,7 +43,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
+          className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity  italic"
         >
           Harsh<span className="text-primary">.</span>
         </Link>

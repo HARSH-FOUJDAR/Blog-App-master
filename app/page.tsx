@@ -236,10 +236,7 @@ export default function Page() {
             className="w-full  text-center lg:text-left"
           >
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
-              Harsh Foujdar
-              <span className="bg-gradient-to-r ml-1 from-primary to-purple-500 bg-clip-text text-transparent">
-                Full Stack Developer
-              </span>
+              Harsh <span className="text-[#d1701f]">Foujdar</span> 
             </h1>
 
             <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300">
