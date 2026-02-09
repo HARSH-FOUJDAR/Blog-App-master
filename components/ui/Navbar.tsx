@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-
+import Image from "next/image";
 const NAV_ITEMS = [
   { name: "Home", href: "/" },
   { name: "About", href: "#about" },
@@ -40,13 +40,27 @@ export default function Navbar() {
         className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
         aria-label="Main Navigation"
       >
-        {/* Logo */}
-        <Link
-          href="/"
-          className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity  italic"
-        >
-          Harsh<span className="text-primary">.</span>
-        </Link>
+        <div className="flex items-center justify-center rounded-full p-2">
+          <div className="relative group cursor-pointer">
+            {/* Background Glow Effect */}
+
+            {/* Main Logo Container */}
+            <div className="relative  rounded-full leading-none flex items-center space-x-3">
+              <div className="flex flex-col space-y-1">
+                <span className="flex items-center text-gray-900">
+                  <span className="text-md font-bold tracking-tighter sm:text-3xl italic">
+                    <span className="text-blue-500 italic">&lt;</span>
+                    H.F.S.D
+                    <span className="text-blue-500"> /&gt;</span>
+                  </span>
+                </span>
+                <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-medium">
+                  Full Stack Developer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-1">
