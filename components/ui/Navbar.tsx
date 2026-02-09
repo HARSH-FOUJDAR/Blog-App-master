@@ -55,10 +55,10 @@ export default function Navbar() {
               key={item.href}
               href={item.href}
               className={cn(
-                "px-4 py-2 text-sm font-medium rounded-md transition-colors",
+                "px-4 py-2 text-md font-medium rounded-md transition-colors",
                 pathname === item.href
-                  ? "text-primary bg-primary/10"
-                  : "text-muted-foreground hover:text-primary hover:bg-accent",
+                  ? "text-black"
+                  : "text-black hover:text-primary hover:bg-accent ",
               )}
             >
               {item.name}
