@@ -236,7 +236,7 @@ export default function Page() {
             className="w-full  text-center lg:text-left"
           >
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
-              Harsh <span className="text-[#d1701f]">Foujdar</span> 
+              Harsh <span className="text-[#d1701f]">Foujdar</span>
             </h1>
 
             <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300">
@@ -301,6 +301,10 @@ export default function Page() {
                 {
                   name: "GitHub",
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+                },
+                {
+                  name: "DSA",
+                  src: "https://img.icons8.com/?size=100&id=JHNvegaTfHjR&format=png&color=000000",
                 },
                 {
                   name: "Vercel",
