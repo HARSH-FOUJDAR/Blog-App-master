@@ -238,7 +238,29 @@ export default function Page() {
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
               Harsh <span className="text-[#d1701f]">Foujdar</span>
             </h1>
-
+            <div className="flex gap-6 items-center">
+              <a href="https://github.com/HARSH-FOUJDAR">
+                <img
+                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                  alt="Icon 1"
+                  className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="mailto:harshbtp738@gmail.com">
+                <img
+                  src="https://img.icons8.com/?size=100&id=OumT4lIcOllS&format=png&color=000000"
+                  alt="Icon 2"
+                  className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/harsh-fauzdar-a74716333/">
+                <img
+                  src="https://img.icons8.com/?size=100&id=qNUNvR9aEWql&format=png&color=000000"
+                  alt="Icon 2"
+                  className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform"
+                />
+              </a>
+            </div>
             <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300">
               Hi, I'm Harsh Foujdar — a passionate Full Stack Developer
             </p>
@@ -344,7 +366,7 @@ export default function Page() {
               alt="Harsh Foujdar"
               width={380}
               height={380}
-              className="rounded-full hover:scale-105 transition-transform duration-500"
+              className="rounded-full  -scale-x-100  transition-transform duration-500"
             />
           </motion.div>
         </section>
@@ -404,7 +426,7 @@ export default function Page() {
                 className="relative"
               >
                 {/* Background Decorative Element */}
-                <div className="absolute -inset-4 bg-[#d1701f]/20 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute"></div>
 
                 <div className="relative group">
                   <Image
@@ -412,7 +434,7 @@ export default function Page() {
                     alt="Hero"
                     width={400}
                     height={400}
-                    className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full object-cover transition-all duration-700"
+                    className="relative -scale-x-100 z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full object-cover transition-all duration-700"
                   />
                 </div>
               </motion.div>
