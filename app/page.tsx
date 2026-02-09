@@ -36,87 +36,6 @@ const imageses = [
   },
 ];
 
-const topics = [
-  "Programming Fundamentals",
-  "Understanding Variables",
-  "Conditional Statements",
-  "Looping & Iteration",
-  "Data Types",
-  "Functions",
-  "Linked List",
-  "Heaps",
-  "Inheritance In Java",
-
-  "Bubble Sort",
-  "Quick Sort",
-  "Insertion Sort",
-  "Merge Sort",
-  "Android Architecture",
-  "Activities and Intents",
-  "User Interface Design",
-  "API Integration",
-  "Data Storage Options",
-  "MVC and MVVM Patterns",
-  "Debugging and Testing",
-];
-
-const mainCourses = [
-  {
-    id: 1,
-    title: "Programming Essentials",
-    rating: "4.46",
-    duration: "1 hour",
-    learners: "2.3L+",
-    level: "Beginner",
-    image: "https://img.icons8.com/color/512/source-code.png",
-  },
-  {
-    id: 2,
-    title: "C for Beginners",
-    rating: "4.49",
-    duration: "2 hours",
-    learners: "2.3L+",
-    level: "Beginner",
-    image: "https://img.icons8.com/color/512/c-programming.png",
-  },
-  {
-    id: 3,
-    title: "Data Structures in C",
-    rating: "4.39",
-    duration: "2 hours",
-    learners: "2L+",
-    level: "Beginner",
-    image: "https://img.icons8.com/color/512/data-configuration.png",
-  },
-  {
-    id: 4,
-    title: "Visual Graphics in C",
-    rating: "4.49",
-    duration: "2 hours",
-    learners: "18.2K+",
-    level: "Intermediate",
-    image: "https://img.icons8.com/color/512/computer.png",
-  },
-  {
-    id: 5,
-    title: "C++ Tutorial",
-    rating: "4.42",
-    duration: "2 hours",
-    learners: "51.9K+",
-    level: "Beginner",
-    image: "https://img.icons8.com/color/512/c-plus-plus-logo.png",
-  },
-
-  {
-    id: 7,
-    title: "Java Programming",
-    rating: "4.48",
-    duration: "2 hours",
-    learners: "7.2L+",
-    level: "Beginner",
-    image: "https://img.icons8.com/color/512/java-coffee-cup-logo.png",
-  },
-];
 const images = [
   {
     img: "https://recipekeeperonline.com/Images/en/laptopphone.png  ",
@@ -187,37 +106,37 @@ const images = [
 const certifications = [
   {
     title: "Python",
-    desc: "Learned AWS basics, instance management, and cloud deployment fundamentals.",
+    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
     image: "/images/image.png",
     link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i", // Link to certificate or description
   },
   {
     title: "AWS Account, Navigation & Instances",
-    desc: "Completed comprehensive Java course covering OOP, data structures, and problem-solving.",
+    desc: "Learned core AWS cloud concepts including account setup, AWS console navigation, EC2 instance creation, management, and basic cloud infrastructure understanding..",
     image: "/images/image2.png",
     link: "https://www.guvi.in/verify-certificate?id=9b23l6q9E4C07d5191",
   },
   {
     title: "Git",
-    desc: "Built modern web applications with React, Next.js, and best practices in frontend development.",
+    desc: "Learned version control using Git including repositories, commits, branches, merging, and collaboration workflows. Used Git for managing and tracking code changes in real projects..",
     image: "/images/image3.png",
     link: "https://www.guvi.in/verify-certificate?id=w3156T771LNP78a616",
   },
   {
     title: "TypeScript",
-    desc: "Mastered backend development with Node.js, Express, and MongoDB database integration.",
+    desc: "Developed strong understanding of TypeScript including types, interfaces, enums, and type safety. Improved JavaScript code quality, scalability, and maintainability using TypeScript.",
     image: "/images/image4.png",
     link: "https://www.guvi.in/verify-certificate?id=6Z6W2kM2aOKs675631",
   },
   {
     title: "100 Days of JavaScript with CodeKata",
-    desc: "Mastered backend development with Node.js, Express, and MongoDB database integration.",
+    desc: "Solved daily JavaScript coding challenges focusing on logic building, arrays, strings, loops, functions, and problem-solving skills through consistent practice on CodeKata.",
     image: "/images/image4.png",
     link: "https://www.guvi.in/verify-certificate?id=w3156T771LNP78a616",
   },
   {
     title: "ChatGPT for Everyone Bengali",
-    desc: "Mastered backend development with Node.js, Express, and MongoDB database integration.",
+    desc: "Learned practical usage of ChatGPT for productivity, learning, and problem-solving Explored prompt writing techniques and AI-assisted workflows explained in the Bengali language..",
     image: "/images/image5.png",
     link: "https://www.guvi.in/verify-certificate?id=w3156T771LNP78a616",
   },
@@ -592,13 +511,13 @@ export default function Page() {
                   <CarouselPrevious
                     className="
     left-4
-    h-12 w-12
+    h-15 w-15
     rounded-full
     bg-white/90 dark:bg-black/70
-    backdrop-blur-md
+    backdrop-blur-as
     border border-gray-200 dark:border-gray-700
     shadow-lg
-    hover:bg-[#d1701f] hover:text-white
+    hover:bg-[#d1701f] 
     transition-all duration-300
     hover:scale-110 cursor-pointer
   "
@@ -607,14 +526,14 @@ export default function Page() {
                   <CarouselNext
                     className="
     right-4
-    h-12 w-12
+    h-15 w-15
     rounded-full
-    bg-white/90 dark:bg-black/70
+    bg-white/100 dark:bg-black/70
     backdrop-blur-md
     border border-gray-200 dark:border-gray-700
     shadow-lg
      cursor-pointer
-    hover:bg-[#d1701f] hover:text-white
+    hover:bg-[#d1701f]
     transition-all duration-300
     hover:scale-110
   "
