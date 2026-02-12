@@ -48,7 +48,7 @@ export default function Navbar() {
             <div className="relative  rounded-full leading-none flex items-center space-x-3">
               <div className="flex flex-col space-y-1">
                 <span className="flex items-center text-gray-900">
-                  <span className="text-md font-bold tracking-tighter sm:text-3xl italic">
+                  <span className="text-md font-bold tracking-tighter  italic">
                     <span className="text-blue-500 italic">&lt;</span>
                     H.F.S.D
                     <span className="text-blue-500"> /&gt;</span>

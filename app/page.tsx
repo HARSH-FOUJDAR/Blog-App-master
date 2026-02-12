@@ -62,21 +62,24 @@ const images = [
     live: "https://stately-madeleine-029b6f.netlify.app/",
     github: "https://github.com/HARSH-FOUJDAR/AI-TOOL",
   },
-  {
-    img: "https://www.facts.ae/wp-content/uploads/2022/08/taxreply-554.png",
-    title: "GST Billing Application",
-    desc: "A complete GST billing and invoicing application that allows users to generate invoices, perform automatic GST calculations, manage customers, and maintain transaction records efficiently.",
-    technologies: ["React.js", "JavaScript", "Tailwind CSS", "Local Storage"],
-    skills: [
-      "Invoice Management",
-      "Business Logic",
-      "Form Handling",
-      "Data Validation",
-    ],
-    live: "https://profound-cascaron-5d0b7c.netlify.app/",
-    github: "https://github.com/HARSH-FOUJDAR/Tax-invoice-Generator-React",
-  },
 
+  {
+    img: "https://enginetemplates.com/wp-content/uploads/edd/2017/09/et-job-portal-free-responsive-joomla-template.png",
+    title: "Job Portal Application(Mern Stack)",
+    desc: "A job portal web application that allows users to search for jobs, view job details, and apply for positions through a clean and responsive interface.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "API Integration",
+      "Node.js",
+      "Express j.s",
+      "MongoDB",
+    ],
+    skills: ["API Integration", "Search Functionality", "Data Rendering"],
+    live: "https://earnest-semifreddo-9217f3.netlify.app/",
+    github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
+  },
   {
     img: "https://kanbanboard.co.uk/public/storage/uploads/page/1724051548_1724051218_kanbanboards.png",
     title: "Kanban Board Task Manager",
@@ -85,21 +88,6 @@ const images = [
     skills: ["Task Management", "State Management", "UI/UX Design"],
     live: "https://playful-croissant-4d9c1b.netlify.app/",
     github: "https://github.com/HARSH-FOUJDAR/Task-Meneger-task",
-  },
-  {
-    img: "https://ms.hsoubcdn.com/uploads/portfolios/833004/63cea3a2f0f71/1.jpg",
-    title: "Movie Search Application",
-    desc: "A movie search web application that allows users to search movies in real-time, view details, and explore movie data through a clean and responsive interface.",
-    technologies: [
-      "React.js",
-      "API Integration",
-      "Tailwind CSS",
-      "JavaScript",
-      "CSS",
-    ],
-    skills: ["API Integration", "Search Functionality", "Data Rendering"],
-    live: "https://thriving-babka-1f288c.netlify.app/",
-    github: "https://github.com/HARSH-FOUJDAR/Movie-SearchApp-React",
   },
 ];
 
@@ -193,6 +181,10 @@ export default function Page() {
               {[
                 // Frontend
                 {
+                  name: "DSA",
+                  src: "https://img.icons8.com/?size=100&id=JHNvegaTfHjR&format=png&color=000000",
+                },
+                {
                   name: "HTML5",
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
                 },
@@ -243,10 +235,7 @@ export default function Page() {
                   name: "GitHub",
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
                 },
-                {
-                  name: "DSA",
-                  src: "https://img.icons8.com/?size=100&id=JHNvegaTfHjR&format=png&color=000000",
-                },
+
                 {
                   name: "Vercel",
                   src: "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg",
@@ -327,7 +316,7 @@ export default function Page() {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://drive.google.com/file/d/1Kfo5LWX_9l5L4qG4gZ7YsGRTFMjHoJGP/view"
+                    href="https://drive.google.com/file/d/12QXv4si-z78Xtm6t1Pm8cbkhdCpB3erW/view?usp=sharing"
                     target="_blank"
                     className="flex items-center gap-2 bg-[#d1701f] text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#b8621b] transition-all"
                   >
@@ -781,7 +770,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
         <Footer></Footer>
       </main>
     </>

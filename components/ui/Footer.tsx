@@ -37,43 +37,57 @@ const SOCIAL_LINKS = [
 export function Footer() {
   return (
     <footer id="contact" className="bg-slate-50 border-t border-gray-200">
-      <div className="container mx-auto px-6 py-20">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-[#d1701f] text-4xl font-extrabold tracking-tight mb-4">
-            Get In Touch
+      <section id="Contect" className="py-12 bg-gray-50">
+        <div className="max-w-lg mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+            Contact Me
           </h2>
-          <p className="text-gray-600 text-lg">
-            Feel free to contact me if any assistance is needed in the future.
-          </p>
-        </div>
 
-        <div className="flex flex-wrap justify-center gap-12 text-center">
-          {CONTACT_INFO.map((item, index) => (
-            <div
-              key={index}
-              className="group flex flex-col items-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 w-72"
-            >
-              <div className="w-20 h-20 rounded-full bg-orange-50 flex items-center justify-center text-[#DA954B] mb-4 group-hover:scale-110 transition-transform">
-                {item.icon}
+          <form action="" className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="flex flex-col gap-5">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  className="w-full h-12 px-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                  placeholder="Your Name"
+                />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
-                {item.title}
-              </h3>
-              {item.link ? (
-                <a
-                  href={item.link}
-                  className="text-gray-600 hover:text-[#d1701f] transition-colors"
-                >
-                  {item.content}
-                </a>
-              ) : (
-                <p className="text-gray-600">{item.content}</p>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
 
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  placeholder="example@mail.com"
+                  className="w-full h-12 px-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Message
+                </label>
+                <textarea
+                  placeholder=" Send Message"
+                  rows="4"
+                  className="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition-colors duration-300 shadow-md"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
       {/* Bottom Bar */}
       <div className="bg-white border-t border-gray-100">
         <div className="container px-6 py-8 mx-auto flex flex-col sm:flex-row justify-between items-center">
