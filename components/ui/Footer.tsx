@@ -73,7 +73,6 @@ export function Footer() {
                 </label>
                 <textarea
                   placeholder=" Send Message"
-                  rows="4"
                   className="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
                 ></textarea>
               </div>
