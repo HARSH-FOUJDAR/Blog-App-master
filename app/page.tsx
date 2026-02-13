@@ -316,7 +316,7 @@ export default function Page() {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://drive.google.com/file/d/12QXv4si-z78Xtm6t1Pm8cbkhdCpB3erW/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1qxuDyLGclJWCZPRmsm5SA7oUbhQulcqm/view?usp=sharing"
                     target="_blank"
                     className="flex items-center gap-2 bg-[#d1701f] text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#b8621b] transition-all"
                   >
