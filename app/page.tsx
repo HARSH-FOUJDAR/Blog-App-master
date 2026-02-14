@@ -8,6 +8,8 @@ import { GiAutoRepair } from "react-icons/gi";
 import { Footer } from "@/components/ui/Footer";
 import { TbArrowMoveRightFilled } from "react-icons/tb";
 import { Download, Terminal } from "lucide-react";
+import Head from "next/head";
+
 import {
   Carousel,
   CarouselContent,
@@ -17,6 +19,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { link } from "fs";
+import { title } from "process";
 const imageses = [
   {
     img: "https://media.istockphoto.com/id/2114295998/photo/asian-and-indian-developer-devops-team-discussion-about-coding-promgram-with-software.jpg?s=2048x2048&w=is&k=20&c=815QNju4g70uc0fFTGiDFsEhhSej2qs99M3o0Hx8ChE=",
@@ -131,8 +134,12 @@ const certifications = [
 ];
 
 export default function Page() {
+
+
   return (
+    
     <>
+
       <main className="bg-gradient-to-b from-background via-background/80 to-background/60 mt-32">
         <section className="max-w-6xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center gap-16">
           {/* TEXT SECTION */}
@@ -560,7 +567,7 @@ export default function Page() {
                   </p>
 
                   <a
-                    href="/"
+                    href="#Projects"
                     className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg transition-all"
                   >
                     View My Projects
