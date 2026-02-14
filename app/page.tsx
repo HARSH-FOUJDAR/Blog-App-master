@@ -63,7 +63,7 @@ const images = [
       "Performance Optimization",
     ],
     live: "https://remarkable-haupia-d108cb.netlify.app/",
-    github: "https://github.com/HARSH-FOUJDAR/AI-TOOL",
+    github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-frontend-",
   },
 
   {
