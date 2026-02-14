@@ -44,6 +44,7 @@
 }
 
 :root {
+  color-scheme: light;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -79,6 +80,7 @@
 }
 
 .dark {
+  color-scheme: dark;
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -117,11 +119,11 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
   }
 }
 
-/* global.css ya index.css me add karo */
+/* Utilities */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -130,14 +132,11 @@
   -ms-overflow-style: none;  /* IE & Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
 .icon-box {
   @apply w-[90px] h-[90px] flex items-center justify-center rounded-xl border border-gray-400 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 hover:scale-110;
 }
 
 .icon-box img {
   @apply max-w-[60px] max-h-[60px] object-contain;
-}
-
-body {
-  @apply bg-background text-foreground;
 }

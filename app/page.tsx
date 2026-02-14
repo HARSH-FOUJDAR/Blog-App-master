@@ -59,7 +59,7 @@ const images = [
       "Animation",
       "Performance Optimization",
     ],
-    live: "https://stately-madeleine-029b6f.netlify.app/",
+    live: "https://remarkable-haupia-d108cb.netlify.app/",
     github: "https://github.com/HARSH-FOUJDAR/AI-TOOL",
   },
 
@@ -148,7 +148,7 @@ export default function Page() {
             <div className="flex gap-6 items-center">
               <a href="https://github.com/HARSH-FOUJDAR">
                 <img
-                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=228BE6"
                   alt="Icon 1"
                   className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform"
                 />

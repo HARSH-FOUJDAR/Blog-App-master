@@ -36,17 +36,16 @@ const SOCIAL_LINKS = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-slate-50 border-t border-gray-200">
-      <section id="Contect" className="py-12 bg-gray-50">
+    <footer id="contact" className="">
+      <hr />
+      <section id="Contect" className="py-12 ">
         <div className="max-w-lg mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
-            Contact Me
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
 
-          <form action="" className="bg-white p-8 rounded-2xl shadow-lg">
+          <form action="" className=" border-2 p-8 rounded-2xl shadow-lg">
             <div className="flex flex-col gap-5">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium  mb-1">
                   Full Name
                 </label>
                 <input
@@ -57,7 +56,7 @@ export function Footer() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium  mb-1">
                   Email Address
                 </label>
                 <input
@@ -68,7 +67,7 @@ export function Footer() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium  mb-1">
                   Message
                 </label>
                 <textarea
@@ -88,7 +87,7 @@ export function Footer() {
         </div>
       </section>
       {/* Bottom Bar */}
-      <div className="bg-white border-t border-gray-100">
+      <div className="bg-slate-900">
         <div className="container px-6 py-8 mx-auto flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm italic">
             © {new Date().getFullYear()} Harsh Foujdar Portfolio

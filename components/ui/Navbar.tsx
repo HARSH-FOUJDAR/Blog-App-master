@@ -7,6 +7,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 const NAV_ITEMS = [
   { name: "Home", href: "/" },
   { name: "About", href: "#about" },
@@ -17,6 +26,7 @@ const NAV_ITEMS = [
 ];
 
 export default function Navbar() {
+  const { setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -35,9 +45,9 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
+    <header className="fixed  top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
       <nav
-        className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+        className="max-w-7xl mx-auto  flex items-center justify-between px-6 py-4"
         aria-label="Main Navigation"
       >
         <div className="flex items-center justify-center rounded-full p-2">
@@ -47,7 +57,7 @@ export default function Navbar() {
             {/* Main Logo Container */}
             <div className="relative  rounded-full leading-none flex items-center space-x-3">
               <div className="flex flex-col space-y-1">
-                <span className="flex items-center text-gray-900">
+                <span className="flex items-center text-gray-900 dark:text-gray-100">
                   <span className="text-md font-bold tracking-tighter  italic">
                     <span className="text-blue-500 italic">&lt;</span>
                     H.F.S.D
@@ -71,8 +81,8 @@ export default function Navbar() {
               className={cn(
                 "px-4 py-2 text-md font-medium rounded-md transition-colors",
                 pathname === item.href
-                  ? "text-black"
-                  : "text-black hover:text-primary hover:bg-accent ",
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-primary hover:bg-accent ",
               )}
             >
               {item.name}
@@ -94,6 +104,39 @@ export default function Navbar() {
             <Menu size={35} className="relative right-20" />
           )}
         </button>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant="outline"
+              size="icon"
+              className="cursor-pointer border-2"
+            >
+              <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+              <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+              <span className="sr-only">Toggle theme</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem
+              className=" cursor-pointer"
+              onClick={() => setTheme("light")}
+            >
+              Light
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              className="cursor-pointer"
+              onClick={() => setTheme("dark")}
+            >
+              Dark
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              className="cursor-pointer"
+              onClick={() => setTheme("system")}
+            >
+              System
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </nav>
 
       {/* Mobile Menu & Overlay */}

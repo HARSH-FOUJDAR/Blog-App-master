@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavbarWrapper from "./NavbarWrapper";
-
+import { ThemeProvider } from "@/components/theme-provider";
 import React from "react";
+
 // import Navbar from "@/components/ui/Navbar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,13 +32,10 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      
-  
-          <NavbarWrapper />
-
-
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
-
+          <NavbarWrapper />
+        </ThemeProvider>
       </body>
     </html>
   );
