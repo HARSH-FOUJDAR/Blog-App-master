@@ -47,7 +47,7 @@ export default function Navbar() {
   return (
     <header className="fixed  top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
       <nav
-        className="max-w-7xl mx-auto  flex items-center justify-between px-6 py-4"
+        className="max-w-7xl mx-auto  flex items-center justify-between px-6 py-4 "
         aria-label="Main Navigation"
       >
         <div className="flex items-center justify-center rounded-full p-2">

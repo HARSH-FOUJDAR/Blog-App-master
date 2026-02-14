@@ -134,25 +134,21 @@ const certifications = [
 ];
 
 export default function Page() {
-
-
   return (
-    
     <>
-
-      <main className="bg-gradient-to-b from-background via-background/80 to-background/60 mt-32">
-        <section className="max-w-6xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center gap-16">
+      <main className="bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200  mt-32 ">
+        <section className="max-w-6xl mx-auto px-4 py-20 flex flex-col lg:flex-row items-center gap-16 ">
           {/* TEXT SECTION */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="w-full  text-center lg:text-left"
+            className="w-full  text-center lg:text-left "
           >
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
               Harsh <span className="text-[#d1701f]">Foujdar</span>
             </h1>
-            <div className="flex gap-6 items-center">
+            <div className="flex gap-6 items-center ">
               <a href="https://github.com/HARSH-FOUJDAR">
                 <img
                   src="https://img.icons8.com/?size=100&id=12599&format=png&color=228BE6"
@@ -184,7 +180,7 @@ export default function Page() {
             </p>
 
             {/* TECH STACK */}
-            <div className="mt-8 flex flex-wrap gap-6 justify-center lg:justify-start">
+            <div className="mt-8 flex flex-wrap gap-6 justify-center lg:justify-start ">
               {[
                 // Frontend
                 {
@@ -281,7 +277,7 @@ export default function Page() {
               alt="Harsh Foujdar"
               width={380}
               height={380}
-              className="rounded-full  -scale-x-100  transition-transform duration-500"
+              className="rounded-full  -scale-x-100  transition-transform duration-500 "
             />
           </motion.div>
         </section>
@@ -349,7 +345,7 @@ export default function Page() {
                     alt="Hero"
                     width={400}
                     height={400}
-                    className="relative -scale-x-100 z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full object-cover transition-all duration-700"
+                    className="relative -scale-x-100 z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]  mt-10 rounded-full object-cover transition-all duration-700"
                   />
                 </div>
               </motion.div>
@@ -544,7 +540,7 @@ export default function Page() {
 
           <section
             id="Skills"
-            className="py-24 px-4  dark:from-gray-900 dark:to-gray-800"
+            className="py-24 px-4  bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200"
           >
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* LEFT SIDE – ABOUT + SKILLS */}
@@ -575,12 +571,12 @@ export default function Page() {
                 </div>
 
                 {/* SKILLS */}
-                <div className="mt-12">
+                <div className="mt-12 ">
                   <h2 className="text-3xl font-bold mb-6 text-indigo-900 dark:text-white text-center lg:text-left">
                     Core Skills & Technologies
                   </h2>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 lg:grid-cols-2">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 lg:grid-cols-2 ">
                     {[
                       "HTML, CSS & JavaScript",
                       "TypeScript",
@@ -605,7 +601,7 @@ export default function Page() {
                         key={idx}
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.4, delay: idx * 0.1 }}
+                        transition={{ duration: 0.7, delay: idx * 0.1 }}
                         viewport={{ once: true }}
                         className="bg-white dark:bg-gray-800 shadow-md hover:shadow-xl rounded-xl p-4 flex items-center gap-3 transition-all"
                       >
@@ -719,7 +715,7 @@ export default function Page() {
         </main>
         <section
           id="certifications"
-          className="py-20 bg-gradient-to-b from-background to-background/40"
+          className="py-20 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200"
         >
           <div className="max-w-6xl mx-auto px-4">
             {/* Heading */}

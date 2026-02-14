@@ -36,7 +36,7 @@ const SOCIAL_LINKS = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="">
+    <footer id="contact" className="bg-gradient-to-b from-white via-gray-50 to-gray-200 dark:from-black dark:via-gray-900 dark:to-black text-gray-900 dark:text-gray-200">
       <hr />
       <section id="Contect" className="py-12 ">
         <div className="max-w-lg mx-auto px-4">
