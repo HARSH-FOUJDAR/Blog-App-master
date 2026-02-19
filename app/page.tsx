@@ -42,7 +42,7 @@ const imageses = [
 const images = [
   {
     img: "https://recipekeeperonline.com/Images/en/laptopphone.png  ",
-    title: "Recipe Sharing Platform Mern Stack",
+    title: "Recipe Sharing Platform (MERN Stack)",
     desc: "The Recipe Sharing Platform is a full-stack web application that allows users to share, discover, and interact with recipes. Users can upload their own recipes, view recipes from others, leave ratings and comments, watch video tutorials, and search for recipes based on ingredients, cuisine, dietary preferences, or meal types..",
     technologies: [
       "React.js",
@@ -68,7 +68,7 @@ const images = [
 
   {
     img: "https://enginetemplates.com/wp-content/uploads/edd/2017/09/et-job-portal-free-responsive-joomla-template.png",
-    title: "Job Portal Application(Mern Stack)",
+    title: "Job Portal Application(MERN Stack)",
     desc: "A job portal web application that allows users to search for jobs, view job details, and apply for positions through a clean and responsive interface.",
     technologies: [
       "React.js",
@@ -78,6 +78,24 @@ const images = [
       "Node.js",
       "Express j.s",
       "MongoDB",
+    ],
+    skills: ["API Integration", "Search Functionality", "Data Rendering"],
+    live: "https://earnest-semifreddo-9217f3.netlify.app/",
+    github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
+  },
+  {
+    img: "https://simplybook.me/build/images/trial-section/medical.7358dc7d.png",
+    title: "Doctor Apoitment Booking System(MERN Stack)",
+    desc: "A job portal web application that allows users to search for jobs, view job details, and apply for positions through a clean and responsive interface.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "API Integration",
+      "Node.js",
+      "Express j.s",
+      "MongoDB",
+      "Payment Integration"
     ],
     skills: ["API Integration", "Search Functionality", "Data Rendering"],
     live: "https://earnest-semifreddo-9217f3.netlify.app/",
@@ -99,7 +117,7 @@ const certifications = [
     title: "Python",
     desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
     image: "/images/image.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i", // Link to certificate or description
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
   },
   {
     title: "AWS Account, Navigation & Instances",
@@ -171,7 +189,7 @@ export default function Page() {
                 />
               </a>
             </div>
-            <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300">
+            <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300 ">
               Hi, I'm Harsh Foujdar — a passionate Full Stack Developer
             </p>
 
@@ -227,7 +245,7 @@ export default function Page() {
                 },
                 {
                   name: "Express",
-                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+                  src: "https://img.icons8.com/?size=100&id=2ZOaTclOqD4q&format=png&color=000000",
                 },
                 {
                   name: "MongoDB",
@@ -236,12 +254,12 @@ export default function Page() {
 
                 {
                   name: "GitHub",
-                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+                  src: "https://img.icons8.com/?size=100&id=lkh3AbJLmFpp&format=png&color=000000",
                 },
 
                 {
                   name: "Vercel",
-                  src: "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg",
+                  src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHurnH0bDUuIp5MVFN2Y-faHhvk0lvVFzJ-nvtr4sZES1UL7kIIr7jKYywWla60DE8YhVhmfb27zRRXAg6fA9U&s&ec=121528423",
                 },
               ].map((tech) => (
                 <div
@@ -249,15 +267,15 @@ export default function Page() {
                   className="group flex flex-col items-center gap-2"
                 >
                   {/* Icon Container */}
-                  <div className="w-[75px] h-[75px] flex items-center justify-center rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-[#d1701f]/50 transition-all duration-300">
+                  <div className="w-[75px] h-[75px] flex bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200 items-center justify-center rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-[#d1701f]/50 transition-all duration-300">
                     <img
                       src={tech.src}
                       alt={tech.name}
-                      className="w-[42px] h-[42px] object-contain transition-transform group-hover:scale-110"
+                      className="w-[42px] h-[42px] object-contain transition-transform group-hover:scale-110 "
                     />
                   </div>
                   {/* Tech Name */}
-                  <span className="text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-[#d1701f] transition-colors">
+                  <span className="text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-[#d1701f] transition-colors ">
                     {tech.name}
                   </span>
                 </div>
@@ -270,25 +288,25 @@ export default function Page() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="w-full lg:w-1/2 flex justify-center"
+            className="w-full lg:w-1/2 flex justify-center "
           >
             <Image
               src="/images/Untitled design (1).png"
               alt="Harsh Foujdar"
               width={380}
               height={380}
-              className="rounded-full  -scale-x-100  transition-transform duration-500 "
+              className="rounded-full  -scale-x-100  transition-transform duration-500  "
             />
           </motion.div>
         </section>
 
-        <hr className="my-12 border-gray-300 dark:border-gray-700" />
+        <hr className="my-12 border-gray-300 dark:border-gray-700 " />
         <main
           id="about"
           className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200 overflow-x-hidden pt-28"
         >
           <section className="container mx-auto px-6 py-12 lg:py-20">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-12 ">
               {/* 🔹 Left Content: Info */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -323,7 +341,7 @@ export default function Page() {
                     target="_blank"
                     className="flex items-center gap-2 bg-[#d1701f] text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#b8621b] transition-all"
                   >
-                    <Download size={20} />
+                    <Download size={20} className="size-6 animate-bounce " />
                     Download CV
                   </motion.a>
                 </div>
@@ -522,7 +540,7 @@ export default function Page() {
     rounded-full
     bg-white/100 dark:bg-black/70
     backdrop-blur-md
-    border border-gray-200 dark:border-gray-700
+    border border-gray-900 dark:border-gray-700
     shadow-lg
      cursor-pointer
     hover:bg-[#d1701f]
