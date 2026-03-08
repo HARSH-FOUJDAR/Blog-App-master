@@ -120,6 +120,12 @@ const certifications = [
     link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
   },
   {
+    title: "AI Impact Summit Buildathon Certificate",
+    desc: "Excited to share that I have successfully participated in the India AI Impact Buildathon 2026, conducted at the AI Impact Summit in collaboration with GUVI and HCL.",
+    image: "/images/download.png",
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+  },
+  {
     title: "Python",
     desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
     image: "/images/image.png",
@@ -325,7 +331,7 @@ export default function Page() {
               alt="Harsh Foujdar"
               width={380}
               height={380}
-              className="rounded-full  -scale-x-100  transition-transform duration-500  "
+              className="rounded-full  -scale-x-100 border-orange-400 border-6  transition-transform duration-500  "
             />
           </motion.div>
         </section>
@@ -393,7 +399,7 @@ export default function Page() {
                     alt="Hero"
                     width={400}
                     height={400}
-                    className="relative -scale-x-100 z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]  mt-10 rounded-full object-cover transition-all duration-700"
+                    className="relative -scale-x-100 z-10 border-orange-400 border-6 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]  mt-10 rounded-full object-cover transition-all duration-700"
                   />
                 </div>
               </motion.div>
@@ -412,178 +418,148 @@ export default function Page() {
                 <span className="h-px w-12 bg-[#d1701f]"></span>
               </h2>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                With a strong foundation in{" "}
+                I am a passionate Full-Stack Developer and currently pursuing my
+                BCA. I enjoy building modern and responsive web applications
+                using
                 <span className="text-[#d1701f] font-medium">
-                  JavaScript and Java
+                  {" "}
+                  HTML, CSS, JavaScript, React, and Node.js , Express.Js ,
+                  MongoDB, MySql
                 </span>
-                , I love crafting projects that are both functional and visually
-                appealing. When I'm not coding, I enjoy exploring new tech
-                trends and contributing to open source.
+                . I love solving problems and continuously improving my coding
+                and communication skills. My goal is to become a skilled
+                software developer and contribute to real-world projects that
+                make people's lives easier.
               </p>
             </motion.div>
           </section>
         </main>
-        {/* Project SECTION */}
+        {/* Projects SECTION */}
         <section
           id="Projects"
-          className="py-24 bg-gradient-to-b from-background/40 to-background/10"
+          className="py-24  bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200"
         >
-          {/* agar full screen width chahiye to container hata do */}
-          <div className="w-full px-6 text-center">
+          <div className="max-w-6xl mx-auto px-6 text-center">
             {/* Heading */}
-            <motion.h2
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-4xl font-extrabold text-gray-900 dark:text-white"
             >
-              Projects
-            </motion.h2>
+              <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                Featured Projects
+              </h2>
+              <p className="mt-3 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                A showcase of my recent work, development journey, and unique
+                technical solutions.
+              </p>
+            </motion.div>
 
-            <p className="mt-3 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Each project is a unique piece of development
-            </p>
-
-            {/* Cards */}
-            <div className="mt-16 py-9 w-full flex justify-center items-center">
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="
-          w-300
-          p-6 sm:p-8
-          rounded-2xl
-          border border-gray-200 dark:border-gray-700
-          bg-white/80 dark:bg-black/30
-          backdrop-blur-md
-          shadow-md hover:shadow-xl
-          transition-all duration-300
-        "
+            {/* Project Carousel Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-14 max-w-5xl mx-auto p-4 sm:p-8 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white/60 dark:bg-gray-900/50 backdrop-blur-lg shadow-xl"
+            >
+              <Carousel
+                opts={{ align: "start", loop: true }}
+                className="w-full relative"
               >
-                <Carousel opts={{ align: "start" }} className="w-full relative">
-                  <CarouselContent className="w-full">
-                    {images.map((img, index) => (
-                      <CarouselItem
-                        key={index}
-                        className="w-full flex-shrink-0"
-                      >
-                        <Card className="w-full border-none shadow-none bg-transparent">
-                          <CardContent className="p-0 w-full">
-                            {/* Image Wrapper */}
-                            <div className="relative group w-full h-64 sm:h-80 md:h-[420px] rounded-2xl overflow-hidden bg-gray-100 dark:bg-black/40">
-                              {/* Image */}
-                              <img
-                                src={img.img}
-                                alt={img.title}
-                                className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
-                              />
+                <CarouselContent className="w-full">
+                  {images.map((img, index) => (
+                    <CarouselItem key={index} className="w-full">
+                      <Card className="w-full border-none shadow-none bg-transparent">
+                        <CardContent className="p-0 flex flex-col items-center">
+                          {/* Image Wrapper with Hover Overlay */}
+                          <div className="relative group w-full h-64 sm:h-80 md:h-[450px] rounded-2xl overflow-hidden bg-gray-100 dark:bg-black/60 shadow-inner">
+                            <img
+                              src={img.img}
+                              alt={img.title}
+                              className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
+                            />
 
-                              {/* Overlay Buttons */}
-                              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-4">
-                                {img.live && (
-                                  <a
-                                    href={img.live}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-4 py-2 text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700"
-                                  >
-                                    Live Demo
-                                  </a>
-                                )}
-
-                                {img.github && (
-                                  <a
-                                    href={img.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="px-4 py-2 text-sm rounded-lg bg-white text-gray-900 hover:bg-gray-200"
-                                  >
-                                    GitHub
-                                  </a>
-                                )}
-                              </div>
-                            </div>
-                          </CardContent>
-
-                          {/* Title */}
-                          <h1 className="mt-6 text-2xl font-bold text-[#d1701f] text-center">
-                            {img.title}
-                          </h1>
-
-                          {/* Description */}
-                          <p className="mt-3 text-center text-sm font-medium text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-                            {img.desc}
-                          </p>
-
-                          {/* Technologies */}
-                          {img.technologies && (
-                            <div className="mt-4 flex flex-wrap justify-center gap-2">
-                              {img.technologies.map((tech, i) => (
-                                <span
-                                  key={i}
-                                  className="px-3 py-1 text-xs font-semibold rounded-full bg-[#d1701f]/10 text-[#d1701f]"
+                            {/* Overlay Buttons */}
+                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-4">
+                              {img.live && (
+                                <a
+                                  href={img.live}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-6 py-2.5 text-sm font-bold rounded-xl bg-blue-600 text-white hover:bg-blue-500 hover:-translate-y-1 transition-all shadow-lg"
                                 >
-                                  {tech}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-
-                          {/* Skills */}
-                          {img.skills && (
-                            <div className="mt-3 flex flex-wrap justify-center gap-2">
-                              {img.skills.map((skill, i) => (
-                                <span
-                                  key={i}
-                                  className="px-3 py-1 text-xs rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                                  Live Demo
+                                </a>
+                              )}
+                              {img.github && (
+                                <a
+                                  href={img.github}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-6 py-2.5 text-sm font-bold rounded-xl bg-white text-gray-900 hover:bg-gray-100 hover:-translate-y-1 transition-all shadow-lg"
                                 >
-                                  {skill}
-                                </span>
-                              ))}
+                                  Source Code
+                                </a>
+                              )}
                             </div>
-                          )}
-                        </Card>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
+                          </div>
 
-                  <CarouselPrevious
-                    className="
-    left-4
-    h-15 w-15
-    rounded-full
-    bg-white/90 dark:bg-black/70
-    backdrop-blur-as
-    border border-gray-200 dark:border-gray-700
-    shadow-lg
-    hover:bg-[#d1701f] 
-    transition-all duration-300
-    hover:scale-110 cursor-pointer
-  "
-                  />
+                          {/* Project Details */}
+                          <div className="mt-8 px-4 w-full">
+                            <h3 className="text-2xl md:text-3xl font-extrabold text-[#d1701f]">
+                              {img.title}
+                            </h3>
+                            <p className="mt-4 text-sm md:text-base font-medium text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                              {img.desc}
+                            </p>
 
-                  <CarouselNext
-                    className="
-    right-4
-    h-15 w-15
-    rounded-full
-    bg-white/100 dark:bg-black/70
-    backdrop-blur-md
-    border border-gray-900 dark:border-gray-700
-    shadow-lg
-     cursor-pointer
-    hover:bg-[#d1701f]
-    transition-all duration-300
-    hover:scale-110
-  "
-                  />
-                </Carousel>
-              </motion.div>
-            </div>
+                            {/* Technologies & Skills Grid */}
+                            <div className="mt-6 flex flex-col gap-3 items-center">
+                              {img.technologies && (
+                                <div className="flex flex-wrap justify-center gap-2">
+                                  {img.technologies.map((tech, i) => (
+                                    <span
+                                      key={i}
+                                      className="px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-md bg-[#d1701f]/10 text-[#d1701f] border border-[#d1701f]/20"
+                                    >
+                                      {tech}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+
+                              {img.skills && (
+                                <div className="flex flex-wrap justify-center gap-2">
+                                  {img.skills.map((skill, i) => (
+                                    <span
+                                      key={i}
+                                      className="px-3 py-1 text-xs font-semibold rounded-md bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                                    >
+                                      {skill}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+
+                {/* Standardized Navigation Buttons */}
+                <div className="hidden md:block">
+                  <CarouselPrevious className="absolute -left-5 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg hover:bg-[#d1701f] hover:text-white dark:hover:bg-[#d1701f] transition-all duration-300" />
+                  <CarouselNext className="absolute -right-5 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-lg hover:bg-[#d1701f] hover:text-white dark:hover:bg-[#d1701f] transition-all duration-300" />
+                </div>
+              </Carousel>
+            </motion.div>
           </div>
         </section>
-        <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-black pt-6 pb-16 text-gray-900 dark:text-gray-100 mt-10 overflow-x-hidden">
+        <main>
           {/* SEARCH BAR */}
 
           <section
