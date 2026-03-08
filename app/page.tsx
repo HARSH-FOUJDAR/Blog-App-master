@@ -331,7 +331,7 @@ export default function Page() {
               alt="Harsh Foujdar"
               width={380}
               height={380}
-              className="rounded-full  -scale-x-100 border-orange-400 border-6  transition-transform duration-500  "
+              className="rounded-full  -scale-x-100 border-[#d1701f] border-5  transition-transform duration-500  "
             />
           </motion.div>
         </section>
@@ -399,7 +399,7 @@ export default function Page() {
                     alt="Hero"
                     width={400}
                     height={400}
-                    className="relative -scale-x-100 z-10 border-orange-400 border-6 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]  mt-10 rounded-full object-cover transition-all duration-700"
+                    className="relative -scale-x-100 z-10 border-[#d1701f] border-5 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]  mt-10 rounded-full object-cover transition-all duration-700"
                   />
                 </div>
               </motion.div>
