@@ -85,8 +85,8 @@ const images = [
   },
   {
     img: "https://simplybook.me/build/images/trial-section/medical.7358dc7d.png",
-    title: "Doctor Apoitment Booking System(MERN Stack)",
-    desc: "A job portal web application that allows users to search for jobs, view job details, and apply for positions through a clean and responsive interface.",
+    title: "Doctor Appointment Booking System (MERN Stack)",
+    desc: "A comprehensive healthcare platform allowing patients to search for specialized doctors, check real-time availability, and seamlessly book appointments. Features include secure authentication, dynamic scheduling, and an intuitive dashboard for managing patient care.",
     technologies: [
       "React.js",
       "Tailwind CSS",
@@ -126,10 +126,12 @@ const certifications = [
     link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
   },
   {
-    title: "Python",
-    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
-    image: "/images/image.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+    title: "Database Architecture & Management",
+    desc: "Designed and implemented robust database structures to handle complex data relationships efficiently. Focused on data modeling, ensuring high performance, data integrity, and scalable queries for full-stack applications.",
+    image: "/images/download (1).png",
+    link: "https://www.zenclass.in/certificateDownload/BYht2rjs6VoDAnAE?download=true",
+    technologies: ["MongoDB", "Mongoose", "SQL", "NoSQL"],
+    skills: ["Data Modeling", "Query Optimization", "Database Design"],
   },
   {
     title: "Python",
@@ -137,24 +139,7 @@ const certifications = [
     image: "/images/image.png",
     link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
   },
-  {
-    title: "Python",
-    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
-    image: "/images/image.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
-  },
-  {
-    title: "Python",
-    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
-    image: "/images/image.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
-  },
-  {
-    title: "Python",
-    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
-    image: "/images/image.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
-  },
+
   {
     title: "AWS Account, Navigation & Instances",
     desc: "Learned core AWS cloud concepts including account setup, AWS console navigation, EC2 instance creation, management, and basic cloud infrastructure understanding..",
