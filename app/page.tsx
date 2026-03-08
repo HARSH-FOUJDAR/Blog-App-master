@@ -114,8 +114,8 @@ const images = [
 
 const certifications = [
   {
-    title: "Guvi Full Stack Developer Certificate",
-    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
+    title: "GUVI Full Stack Developer Certification",
+    desc: "Successfully completed an intensive Full Stack Development program. Gained hands-on experience building scalable, real-world web applications from scratch, mastering both front-end interfaces and back-end server architecture.",
     image: "/images/GuviCertification - iLO2rnWE3rwHA4Ux.png",
     link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
   },
