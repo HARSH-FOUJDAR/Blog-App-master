@@ -62,7 +62,7 @@ const images = [
       "Animation",
       "Performance Optimization",
     ],
-    live: "https://remarkable-haupia-d108cb.netlify.app/",
+    live: "https://remarkable-haupia-d108cb.netlify.app",
     github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-frontend-",
   },
 
@@ -80,7 +80,7 @@ const images = [
       "MongoDB",
     ],
     skills: ["API Integration", "Search Functionality", "Data Rendering"],
-    live: "https://earnest-semifreddo-9217f3.netlify.app/",
+    live: "https://earnest-semifreddo-9217f3.netlify.app",
     github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
   },
   {
@@ -95,10 +95,10 @@ const images = [
       "Node.js",
       "Express j.s",
       "MongoDB",
-      "Payment Integration"
+      "Payment Integration",
     ],
     skills: ["API Integration", "Search Functionality", "Data Rendering"],
-    live: "https://earnest-semifreddo-9217f3.netlify.app/",
+    live: "https://bejewelled-arithmetic-643bb6.netlify.app",
     github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
   },
   {
@@ -113,6 +113,36 @@ const images = [
 ];
 
 const certifications = [
+  {
+    title: "Guvi Full Stack Developer Certificate",
+    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
+    image: "/images/GuviCertification - iLO2rnWE3rwHA4Ux.png",
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+  },
+  {
+    title: "Python",
+    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
+    image: "/images/image.png",
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+  },
+  {
+    title: "Python",
+    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
+    image: "/images/image.png",
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+  },
+  {
+    title: "Python",
+    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
+    image: "/images/image.png",
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+  },
+  {
+    title: "Python",
+    desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
+    image: "/images/image.png",
+    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+  },
   {
     title: "Python",
     desc: "Gained strong fundamentals of Python programming including variables, loops, functions, data structures, and basic problem-solving techniques. Applied Python concepts to real-world examples and logic building.",
@@ -733,58 +763,87 @@ export default function Page() {
         </main>
         <section
           id="certifications"
-          className="py-20 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200"
+          className="py-24 bg-[#f8fafc] dark:bg-[#050505] transition-colors duration-500"
         >
-          <div className="max-w-6xl mx-auto px-4">
-            {/* Heading */}
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-4xl font-bold text-center mb-12"
-            >
-              <span className="text-primary">Certifications</span>
-            </motion.h2>
+          <div className="max-w-7xl mx-auto px-6">
+            {/* Heading Section */}
+            <div className="flex flex-col items-center mb-16 text-center">
+              <motion.span
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="text-primary font-semibold text-sm mb-3"
+              >
+                My Achievements
+              </motion.span>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-4xl md:text-5xl  text-gray-900 dark:text-white"
+              >
+                Professional{" "}
+                <span className="text-primary">Certifications</span>
+              </motion.h2>
+            </div>
 
             {/* Certifications Grid */}
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* lg:grid-cols-3 use kiya hai taaki har card ko proper width mile */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {certifications.map((cert, idx) => (
                 <motion.a
                   key={idx}
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className="group block p-4 rounded-2xl border shadow-sm hover:shadow-lg bg-card hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+                  className="group relative bg-white dark:bg-[#111] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-500"
                 >
-                  {/* Image */}
-                  <div className="overflow-hidden rounded-xl">
+                  {/* Image Container with 16:9 Aspect Ratio */}
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                     <Image
                       src={cert.image}
                       alt={cert.title}
-                      width={400}
-                      height={200}
-                      className="rounded-xl w-full h-40  group-hover:scale-105 transition-all duration-500"
+                      fill
+                      className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
 
-                  {/* Title */}
-                  <h3 className="mt-5 text-xl font-semibold group-hover:text-primary transition">
-                    {cert.title}
-                  </h3>
+                  {/* Content Area */}
+                  <div className="p-8">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">
+                      {cert.title}
+                    </h3>
 
-                  {/* Description */}
-                  <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm">
-                    {cert.desc}
-                  </p>
+                    <p className="mt-3 text-gray-500 dark:text-gray-400 text-sm leading-relaxed line-clamp-2">
+                      {cert.desc}
+                    </p>
 
-                  {/* Read More */}
-                  <div className="mt-4 text-primary font-medium group-hover:underline">
-                    View Certificate →
+                    {/* Bottom Action */}
+                    <div className="mt-6 pt-6 border-t border-gray-50 dark:border-gray-800 flex items-center justify-between">
+                      <span className="text-xs font-bold text-gray-400 group-hover:text-primary transition-colors">
+                        Verify License
+                      </span>
+                      <div className="h-10 w-10 rounded-full bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </motion.a>
               ))}
