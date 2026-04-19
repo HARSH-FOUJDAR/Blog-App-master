@@ -18,26 +18,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { link } from "fs";
-import { title } from "process";
-const imageses = [
-  {
-    img: "https://media.istockphoto.com/id/2114295998/photo/asian-and-indian-developer-devops-team-discussion-about-coding-promgram-with-software.jpg?s=2048x2048&w=is&k=20&c=815QNju4g70uc0fFTGiDFsEhhSej2qs99M3o0Hx8ChE=",
-    desc: "A software developer typing code on a laptop, focused on a dark-themed IDE.",
-  },
-  {
-    img: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3Hza57OTLRJzS2w69oT7VJ/97e92e9f54b741d95208463c97bd6fe9/GettyImages-2022975324.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000",
-    desc: "Young developer brainstorming in front of a whiteboard with code diagrams and notes.",
-  },
-  {
-    img: "https://d1vwxdpzbgdqj.cloudfront.net/enterprise/career_path_landing_1/career_path.webp",
-    desc: "Full-stack developer working with multiple screens showing code.",
-  },
-  {
-    img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/How_To_Become_a_Data_Analytics_Managerr.jpg",
-    desc: "Female software engineer working on a laptop in a modern office space.",
-  },
-];
+
 
 const images = [
   {
@@ -117,13 +98,13 @@ const certifications = [
     title: "GUVI Full Stack Developer Certification",
     desc: "Successfully completed an intensive Full Stack Development program. Gained hands-on experience building scalable, real-world web applications from scratch, mastering both front-end interfaces and back-end server architecture.",
     image: "/images/GuviCertification - iLO2rnWE3rwHA4Ux.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+    link: "https://drive.google.com/file/d/1QnR15FlJdtsaoPPVMKTXhG0Spa4Qf1b_/view?usp=sharing",
   },
   {
     title: "AI Impact Summit Buildathon Certificate",
     desc: "Excited to share that I have successfully participated in the India AI Impact Buildathon 2026, conducted at the AI Impact Summit in collaboration with GUVI and HCL.",
     image: "/images/download.png",
-    link: "https://www.guvi.in/verify-certificate?id=8r72000F4PO6pSl17i",
+    link: "https://drive.google.com/file/d/14LLXT2OMkJ8MmA6VRu8WF229NxrYQPeg/view?usp=sharing",
   },
   {
     title: "Database Architecture & Management",
@@ -146,30 +127,15 @@ const certifications = [
     image: "/images/image2.png",
     link: "https://www.guvi.in/verify-certificate?id=9b23l6q9E4C07d5191",
   },
-  {
-    title: "Git",
-    desc: "Learned version control using Git including repositories, commits, branches, merging, and collaboration workflows. Used Git for managing and tracking code changes in real projects..",
-    image: "/images/image3.png",
-    link: "https://www.guvi.in/verify-certificate?id=w3156T771LNP78a616",
-  },
+
   {
     title: "TypeScript",
     desc: "Developed strong understanding of TypeScript including types, interfaces, enums, and type safety. Improved JavaScript code quality, scalability, and maintainability using TypeScript.",
     image: "/images/image4.png",
     link: "https://www.guvi.in/verify-certificate?id=6Z6W2kM2aOKs675631",
   },
-  {
-    title: "100 Days of JavaScript with CodeKata",
-    desc: "Solved daily JavaScript coding challenges focusing on logic building, arrays, strings, loops, functions, and problem-solving skills through consistent practice on CodeKata.",
-    image: "/images/image4.png",
-    link: "https://www.guvi.in/verify-certificate?id=w3156T771LNP78a616",
-  },
-  {
-    title: "ChatGPT for Everyone Bengali",
-    desc: "Learned practical usage of ChatGPT for productivity, learning, and problem-solving Explored prompt writing techniques and AI-assisted workflows explained in the Bengali language..",
-    image: "/images/image5.png",
-    link: "https://www.guvi.in/verify-certificate?id=w3156T771LNP78a616",
-  },
+
+
 ];
 
 export default function Page() {
@@ -358,7 +324,7 @@ export default function Page() {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://drive.google.com/file/d/1qxuDyLGclJWCZPRmsm5SA7oUbhQulcqm/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1fO8JiKe_KYIIuZTGYQcTtP9asJpGSXh9/view?usp=sharing"
                     target="_blank"
                     className="flex items-center gap-2 bg-[#d1701f] text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#b8621b] transition-all"
                   >
