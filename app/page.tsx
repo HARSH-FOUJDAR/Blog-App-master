@@ -19,7 +19,6 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 
-
 const images = [
   {
     img: "https://recipekeeperonline.com/Images/en/laptopphone.png  ",
@@ -134,8 +133,6 @@ const certifications = [
     image: "/images/image4.png",
     link: "https://www.guvi.in/verify-certificate?id=6Z6W2kM2aOKs675631",
   },
-
-
 ];
 
 export default function Page() {
@@ -324,7 +321,7 @@ export default function Page() {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://drive.google.com/file/d/1fO8JiKe_KYIIuZTGYQcTtP9asJpGSXh9/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1Km5aaskXsTcCQ-g3PYeOYYABakBGzCzp/view?usp=sharing"
                     target="_blank"
                     className="flex items-center gap-2 bg-[#d1701f] text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#b8621b] transition-all"
                   >
