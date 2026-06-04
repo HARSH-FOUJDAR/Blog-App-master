@@ -47,23 +47,6 @@ const images = [
   },
 
   {
-    img: "https://enginetemplates.com/wp-content/uploads/edd/2017/09/et-job-portal-free-responsive-joomla-template.png",
-    title: "Job Portal Application(MERN Stack)",
-    desc: "A job portal web application that allows users to search for jobs, view job details, and apply for positions through a clean and responsive interface.",
-    technologies: [
-      "React.js",
-      "Tailwind CSS",
-      "JavaScript",
-      "API Integration",
-      "Node.js",
-      "Express j.s",
-      "MongoDB",
-    ],
-    skills: ["API Integration", "Search Functionality", "Data Rendering"],
-    live: "https://earnest-semifreddo-9217f3.netlify.app",
-    github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
-  },
-  {
     img: "https://simplybook.me/build/images/trial-section/medical.7358dc7d.png",
     title: "Doctor Appointment Booking System (MERN Stack)",
     desc: "A comprehensive healthcare platform allowing patients to search for specialized doctors, check real-time availability, and seamlessly book appointments. Features include secure authentication, dynamic scheduling, and an intuitive dashboard for managing patient care.",
@@ -79,6 +62,23 @@ const images = [
     ],
     skills: ["API Integration", "Search Functionality", "Data Rendering"],
     live: "https://bejewelled-arithmetic-643bb6.netlify.app",
+    github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
+  },
+  {
+    img: "https://enginetemplates.com/wp-content/uploads/edd/2017/09/et-job-portal-free-responsive-joomla-template.png",
+    title: "Job Portal Application(MERN Stack)",
+    desc: "A job portal web application that allows users to search for jobs, view job details, and apply for positions through a clean and responsive interface.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "API Integration",
+      "Node.js",
+      "Express j.s",
+      "MongoDB",
+    ],
+    skills: ["API Integration", "Search Functionality", "Data Rendering"],
+    live: "https://earnest-semifreddo-9217f3.netlify.app",
     github: "https://github.com/HARSH-FOUJDAR/Job-portel-Mern-Backend-",
   },
   {
@@ -174,7 +174,7 @@ export default function Page() {
               </a>
             </div>
             <p className="mt-6 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-300 ">
-              Hi, I'm Harsh Foujdar — a passionate Full Stack Developer
+              Hi, I'm Harsh Foujdar — a passionate Software Developer
             </p>
 
             <p className="mt-3 text-gray-500">
@@ -196,6 +196,10 @@ export default function Page() {
                 {
                   name: "CSS3",
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+                },
+                {
+                  name: "Java",
+                  src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzWbD0lTD7qyIr7YsqOeLgIAtpz5mS-cs3aQ&s",
                 },
                 {
                   name: "JavaScript",
@@ -234,6 +238,30 @@ export default function Page() {
                 {
                   name: "MongoDB",
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+                },
+                {
+                  name: "MicroServices",
+                  src: "https://www.clipartmax.com/png/middle/165-1656775_as-developers-package-individual-microservices-in-containers-kubernetes-logo.png",
+                },
+                {
+                  name: "CI/CD",
+                  src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfugq67hJqr2VkPtnB9PLZzBd4SGS4OGuc7Ci-3aLH411wvxzNBZZYGkoz&s=10",
+                },
+                {
+                  name: "Docker",
+                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+                },
+                {
+                  name: "AWS",
+                  src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRznkIHOT44uzCN2BDyAslkblIhOQ_5q40IuhEkTRQ1BQ&s=10",
+                },
+                {
+                  name: "Postman",
+                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+                },
+                {
+                  name: "Git",
+                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
                 },
 
                 {
@@ -304,7 +332,7 @@ export default function Page() {
                 </div>
 
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-gray-900 dark:text-white leading-tight">
-                  Full Stack <span className="text-[#d1701f]">Developer</span>
+                  Software <span className="text-[#d1701f]">Developer</span>
                 </h1>
 
                 <p className="text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
@@ -396,7 +424,7 @@ export default function Page() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                Featured Projects
+                Capstone Project
               </h2>
               <p className="mt-3 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 A showcase of my recent work, development journey, and unique
@@ -430,7 +458,7 @@ export default function Page() {
                             />
 
                             {/* Overlay Buttons */}
-                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-4">
+                            <div className="absolute inset-0 md:hidden bg-black/60 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-all duration-300 flex items-center justify-center gap-4">
                               {img.live && (
                                 <a
                                   href={img.live}
@@ -447,6 +475,36 @@ export default function Page() {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="px-6 py-2.5 text-sm font-bold rounded-xl bg-white text-gray-900 hover:bg-gray-100 hover:-translate-y-1 transition-all shadow-lg"
+                                >
+                                  Source Code
+                                </a>
+                              )}
+                            </div>
+                            <div
+                              className="absolute inset-0
+  bg-black/60
+  md:opacity-0 md:group-hover:opacity-100
+  opacity-100
+ 
+  transition-all duration-300
+  flex items-center justify-center gap-4"
+                            >
+                              {img.live && (
+                                <a
+                                  href={img.live}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-6 py-2.5 text-sm font-bold  rounded-xl bg-blue-600 text-white hover:bg-blue-500 hover:-translate-y-1 transition-all shadow-lg"
+                                >
+                                  Live Demo
+                                </a>
+                              )}
+                              {img.github && (
+                                <a
+                                  href={img.github}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="px-3 py-2.5 text-sm font-bold  rounded-xl bg-white text-gray-900 hover:bg-gray-100 hover:-translate-y-1 transition-all shadow-lg"
                                 >
                                   Source Code
                                 </a>
@@ -552,6 +610,20 @@ export default function Page() {
                     {[
                       "HTML, CSS & JavaScript",
                       "TypeScript",
+                      "Java",
+                      "DSA",
+                      "Microservices & CI/CD",
+                      "API Design & Integration",
+                      "Authentication & Authorization",
+                      "Testing & Debugging",
+                      "Version Control & Collaboration",
+                      "Cloud Deployment & DevOps",
+                      "Data Structures & Algorithms",
+                      "Object-Oriented Programming",
+                      "Functional Programming",
+                      "Agile & Scrum Methodologies",
+                      "Problem Solving & Logical Thinking",
+                      "Database Design & Management",
                       "React & Next.js",
                       "Node.js & Express",
                       "MongoDB & MySQL",
