@@ -312,13 +312,13 @@ export default function Page() {
           </motion.div>
         </section>
 
-        <hr className="my-12 border-gray-300 dark:border-gray-700 "/>
+        <hr className="my-12 border-gray-300 dark:border-gray-700 " />
         <main
           id="about"
-          className="bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200"
+          className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200 overflow-x-hidden pt-28"
         >
-          <section className="mx-auto justify-center items-center max-w-6xl px-30 py-20">
-            <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <section className="container mx-auto px-6 py-12 lg:py-20">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 ">
               {/* 🔹 Left Content: Info */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -345,7 +345,7 @@ export default function Page() {
                   solutions.
                 </p>
 
-                <div className="flex justify-center mx-auto">
+                <div className="flex flex-wrap justify-center lg:justify-start gap-4">
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
