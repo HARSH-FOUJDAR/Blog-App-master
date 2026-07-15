@@ -303,7 +303,7 @@ export default function Page() {
             className="w-full lg:w-1/2 flex justify-center "
           >
             <Image
-              src="/images/Untitled design (1).png"
+              src="/images/WhatsApp_Image_2026-07-15_at_9.34.08_AM-removebg-preview.png"
               alt="Harsh Foujdar"
               width={380}
               height={380}
@@ -312,13 +312,13 @@ export default function Page() {
           </motion.div>
         </section>
 
-        <hr className="my-12 border-gray-300 dark:border-gray-700 " />
+        <hr className="my-12 border-gray-300 dark:border-gray-700 "/>
         <main
           id="about"
-          className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200 overflow-x-hidden pt-28"
+          className="bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-800 dark:text-gray-200"
         >
-          <section className="container mx-auto px-6 py-12 lg:py-20">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-12 ">
+          <section className="mx-auto justify-center items-center max-w-6xl px-30 py-20">
+            <div className="flex flex-col lg:flex-row gap-12 items-center">
               {/* 🔹 Left Content: Info */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -345,7 +345,7 @@ export default function Page() {
                   solutions.
                 </p>
 
-                <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+                <div className="flex justify-center mx-auto">
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -366,18 +366,7 @@ export default function Page() {
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
-                {/* Background Decorative Element */}
-                <div className="absolute"></div>
-
-                <div className="relative group">
-                  <Image
-                    src="/images/Untitled design (1).png"
-                    alt="Hero"
-                    width={400}
-                    height={400}
-                    className="relative -scale-x-100 z-10 border-[#d1701f] border-5 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]  mt-10 rounded-full object-cover transition-all duration-700"
-                  />
-                </div>
+              
               </motion.div>
             </div>
 
